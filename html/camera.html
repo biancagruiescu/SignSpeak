@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignSpeak - Camera</title>
+  <link rel="stylesheet" href="../css/camera.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page">
+    <header class="navbar">
+      <div class="logo">
+        <div class="logo-icon">🤟</div>
+        <span>SignSpeak</span>
+      </div>
+
+      <div class="nav-actions">
+        <a href="index.html" class="back-link">← Back</a>
+        <a  href="login-page.html" class="sign-btn">Sign In</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1 class="page-title">Live Translation</h1>
+
+      <div class="camera-box">
+        <div class="camera-placeholder">
+          <div class="placeholder-icon">🤟</div>
+          <p>Start your camera to begin translating</p>
+        </div>
+
+        <video id="video" autoplay playsinline></video>
+      </div>
+
+      <div class="start-wrap">
+        <button class="start-btn" onclick="startCamera()">📷 Start Camera</button>
+      </div>
+    </main>
+  </div>
+
+
+</body>
+</html>
