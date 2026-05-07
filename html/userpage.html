@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SignSpeak - User Page</title>
+  <link rel="stylesheet" href="../css/userpage.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page">
+    <header class="navbar">
+      <div class="logo">
+        <div class="logo-icon">🤟</div>
+        <span>SignSpeak</span>
+      </div>
+
+      <div class="nav-actions">
+        <a href="camera.html" class="back-link">← Back</a>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+      </div>
+    </header>
+
+    <main class="profile-container">
+      <section class="profile-card">
+        <h1>User Profile</h1>
+        <p class="subtitle">Your account details and translation history</p>
+
+        <div class="user-info">
+          <div class="info-box">
+            <span class="label">Name</span>
+            <span id="userName" class="value">Loading...</span>
+          </div>
+
+          <div class="info-box">
+            <span class="label">Email</span>
+            <span id="userEmail" class="value">Loading...</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="history-card">
+        <h2>Translation History</h2>
+        <div id="historyList" class="history-list">
+          <p class="empty-history">Loading history...</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="../scripts/scripts.js"></script>
+<script src="../scripts/scripts.js"></script>
+<script>
+  loadUserPage();
+</script>
+</body>
+</html>

@@ -148,3 +148,11 @@ body {
     font-size: 16px;
   }
 }
+.error-text {
+  color: #ff5c5c;
+  text-align: center;
+  min-height: 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}

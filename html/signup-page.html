@@ -4,20 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SignSpeak - Sign Up</title>
-  <link rel="stylesheet" href="../css/signup.css" />
+<link rel="stylesheet" href="../css/signup.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <div class="signup-card">
     <h1>Create account</h1>
     <p>Join SignSpeak to save your translations</p>
 
-    <form class="signup-form">
-      <input type="text" placeholder="Display name" required>
-      <input type="email" placeholder="Email" required>
-      <input type="password" placeholder="Password" required>
+    <form class="signup-form" onsubmit="return validateSignup()" novalidate>
+      <p id="error" class="error-text"></p>
+
+      <input type="text" id="name" placeholder="Display name" />
+      <input type="text" id="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Password" />
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" />
 
       <button type="submit" class="signup-btn">
         <span>👥</span>
@@ -29,5 +33,10 @@
       Already have an account? <a href="login-page.html">Sign in</a>
     </div>
   </div>
+
+  <script src="../scripts/scripts.js">
+  
+  alert("inline script works");
+</script>
 </body>
 </html>
