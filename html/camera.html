@@ -17,22 +17,49 @@
         <span>SignSpeak</span>
       </div>
 
-      <div class="nav-actions">
-        <a href="index.html" class="back-link">← Back</a>
-        <a href="login-page.html" class="sign-btn">Sign In</a>
-      </div>
+      <div class="nav-actions" id="cameraNavActions">
+  <a href="index.html" class="back-link">← Back</a>
+</div>
     </header>
 
     <main class="container">
-      <h1 class="page-title">Live Translation</h1>
-
+<h1 class="page-title">Live Sign Recognition</h1>
       <div class="camera-box">
         <div class="camera-placeholder">
           <div class="placeholder-icon">🤟</div>
-          <p>Start your camera to begin translating</p>
+          <p>Start your camera to begin recognition</p>
         </div>
 
         <video id="video" autoplay playsinline></video>
+        <canvas id="canvas" style="display:none;"></canvas>
+      </div>
+
+      <div class="result-box" style="margin-top: 20px; text-align: center;">
+    
+    <div style="font-size: 20px; color: #00adb5; margin-bottom: 10px;">
+        Live Detection: <span id="currentLetter" style="font-weight: bold; color: white;">-</span>
+    </div>
+    
+    <div style="font-size: 24px; color: #00adb5;">
+        Recognised Letters: <span id="letterSequence" style="font-weight: bold; color: white; background: #222; padding: 5px 15px; border-radius: 5px;"></span>
+    </div>
+
+</div>
+
+<div class="translation-controls">
+<button onclick="addLetter()" class="action-btn add-btn">
+    Add Letter
+</button>
+
+<button onclick="clearSequence()" class="action-btn clear-btn">
+    Clear Letters
+</button>
+
+<button onclick="saveSequenceToDB()" class="action-btn save-btn">
+    Save to Profile
+</button>
+</div>
+      
       </div>
 
       <div class="start-wrap">

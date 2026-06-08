@@ -1,0 +1,8 @@
+dataset/
+thesis_assets/
+users.db
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env

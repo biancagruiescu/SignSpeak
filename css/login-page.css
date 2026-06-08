@@ -209,3 +209,85 @@ body {
     font-size: 16px;
   }
 }
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar {
+    width: 100%;
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.logo-icon {
+    width: 46px;
+    height: 46px;
+
+    border-radius: 14px;
+
+    background: #3ddbd9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+
+    box-shadow: 0 0 20px rgba(61,219,217,0.35);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.back-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    color: #3ddbd9;
+}
+
+.sign-btn {
+    padding: 12px 20px;
+
+    border-radius: 14px;
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    background: rgba(255,255,255,0.04);
+
+    color: white;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.sign-btn:hover {
+    border-color: #3ddbd9;
+    color: #3ddbd9;
+
+    box-shadow: 0 0 15px rgba(61,219,217,0.2);
+}

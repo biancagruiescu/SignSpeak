@@ -11,17 +11,21 @@
 </head>
 <body>
   <div class="page">
-    <header class="navbar">
-      <a href="index.html" class="logo">
-        <div class="logo-icon">🤟</div>
-        <span>SignSpeak</span>
-      </a>
-    </header>
+   <header class="navbar">
+  <a href="index.html" class="logo">
+    <div class="logo-icon">🤟</div>
+    <span>SignSpeak</span>
+  </a>
 
+  <div class="nav-actions">
+    <a href="index.html" class="back-link">← Home</a>
+    <a href="signup-page.html" class="sign-btn">Create Account</a>
+  </div>
+</header>
     <main class="login-section">
       <div class="login-card">
         <h1>Welcome back</h1>
-        <p>Sign in to access your translations</p>
+        <p>Sign in to access your recognition history</p>
 
         <form class="login-form" onsubmit="return validateLogin()" novalidate>
           <p id="loginError" class="error-text"></p>

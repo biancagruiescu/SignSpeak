@@ -176,7 +176,7 @@ body {
 .start-wrap {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .start-btn {
@@ -186,7 +186,7 @@ body {
   border-radius: 16px;
   min-width: 225px;
   height: 56px;
-  padding: 0 28px;
+  padding: 0 10px;
   font-size: 17px;
   font-weight: 800;
   cursor: pointer;
@@ -279,4 +279,206 @@ body {
   .camera-box {
     min-height: 300px;
   }
+}
+/* PREDICTION BOX */
+.prediction-box {
+  margin-top: 8px;
+  padding: 28px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(20,25,36,0.95) 0%, rgba(14,18,28,0.95) 100%);
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow:
+    0 0 35px rgba(53, 221, 211, 0.08),
+    inset 0 1px 0 rgba(255,255,255,0.03);
+}
+
+.prediction-box h2 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.prediction-box h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  color: var(--accent);
+}
+
+#currentLetter {
+  color: var(--accent);
+}
+
+#translatedWord {
+  color: #ffffff;
+}
+
+/* BUTTONS ROW */
+.prediction-box button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 22px;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 8px;
+  transition: 0.25s ease;
+  min-width: 170px;
+}
+
+/* ADD LETTER */
+.prediction-box button:nth-child(3) {
+  background: rgba(53, 221, 211, 0.12);
+  color: var(--accent);
+  border: 1px solid rgba(53, 221, 211, 0.35);
+}
+
+.prediction-box button:nth-child(3):hover {
+  background: rgba(53, 221, 211, 0.20);
+  transform: translateY(-2px);
+}
+
+/* CLEAR */
+.prediction-box button:nth-child(4) {
+  background: rgba(255,255,255,0.06);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.prediction-box button:nth-child(4):hover {
+  background: rgba(255,255,255,0.12);
+  transform: translateY(-2px);
+}
+
+/* SAVE */
+.prediction-box button:nth-child(5) {
+  background: linear-gradient(135deg, #35ddd3 0%, #27cfc5 100%);
+  color: #041018;
+  box-shadow: 0 0 20px rgba(53,221,211,0.25);
+}
+
+.prediction-box button:nth-child(5):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(53,221,211,0.35);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .prediction-box h2 {
+    font-size: 30px;
+  }
+
+  .prediction-box h3 {
+    font-size: 22px;
+  }
+
+  .prediction-box button {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+/* ==========================
+   TRANSLATION PANEL
+========================== */
+
+.result-box {
+  margin-top: 25px;
+  text-align: center;
+}
+
+#currentLetter {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+#letterSequence {
+  display: inline-block;
+  min-width: 80px;
+
+  padding: 8px 18px;
+
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px;
+
+  color: white;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* ==========================
+   BUTTON GROUP
+========================== */
+
+.translation-controls {
+  margin-top: 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.action-btn {
+  width: 260px;
+  height: 54px;
+
+  border: none;
+  border-radius: 14px;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+/* Add */
+
+.add-btn {
+  background: rgba(53,221,211,0.15);
+  color: #35ddd3;
+  border: 1px solid rgba(53,221,211,0.35);
+}
+
+.add-btn:hover {
+  background: rgba(53,221,211,0.25);
+  transform: translateY(-2px);
+}
+
+/* Clear */
+
+.clear-btn {
+  background: rgba(255,70,70,0.15);
+  color: #ff6868;
+  border: 1px solid rgba(255,70,70,0.35);
+}
+
+.clear-btn:hover {
+  background: rgba(255,70,70,0.25);
+  transform: translateY(-2px);
+}
+
+/* Save */
+
+.save-btn {
+  background: linear-gradient(
+      135deg,
+      #35ddd3 0%,
+      #28cfc5 100%
+  );
+
+  color: #041018;
+
+  font-weight: 800;
+
+  box-shadow: 0 0 25px rgba(53,221,211,0.25);
+  padding-bottom: 0px;
+}
+
+.save-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 35px rgba(53,221,211,0.4);
 }
